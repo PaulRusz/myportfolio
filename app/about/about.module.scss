@@ -1,0 +1,105 @@
+
+
+.aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* border: 1px solid hsl(0, 0%, 87%); */
+    border: 1px solid #124e66;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: orange;
+    margin: 20px 0;
+}
+
+.aboutMeContainer h2 {
+    margin-bottom: 10px;
+    color: whitesmoke;
+    
+ }
+
+ .aboutMeContainer p {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 1.2;
+    color: #124e66;
+    text-align: center;
+    padding-left: 55px;
+    padding-right: 55px;
+    
+ }
+
+ .divider3 {
+    width: 40%;
+    height: 1px;
+    background-color: orange;
+    margin: 20px auto;
+}
+
+
+.image {
+    height: 250px;
+    width: 250px;
+    padding-bottom: 25px;
+    transform: rotate(325deg);
+
+}
+
+.weddingImage {
+    transform: rotate(325deg);
+}
+
+/* Reset the transform for other images with the "image" class */
+.image:not(.weddingImage) {
+    transform: none;
+}
+
+.narrativeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 1px solid #124e66;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    max-width: 60%;
+}
+
+@media (max-width: 768px) { 
+    .narrativeContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        margin: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border: 1px solid #124e66;
+        border-radius: 10px;
+        max-width: 85%;
+    }
+
+    .h1 {
+        text-align: center;
+    }
+
+    .p {
+        padding: 15px;
+        margin: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    }

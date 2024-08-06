@@ -1,0 +1,188 @@
+
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #124e66;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0)
+}
+
+.contactContainer p {
+    font-size: 20px;
+}
+
+.contactTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    color: #f9f9f9;
+    // border: 1px solid #124e66;
+    // border-radius: 10px;
+    // box-shadow: 0 0 10px rgba(0, 0, 0)
+}
+
+.contactTextContainer p {
+    font-size: 25px;
+}
+
+.divider3 {
+    width: 40%;
+    height: 1px;
+    // background-color: #124e66;
+    background-color: orange;
+    margin: 20px auto;
+}
+
+.contactForm { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0)
+}
+
+.contactForm p {
+    font-size: 35px;
+}
+
+.name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 20px;
+    width: 150px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: black;
+}
+
+.name::placeholder {
+    text-align: center;
+}
+
+.email {
+    margin-bottom: 10px;
+    height: 20px;
+    width: 40%;
+    border-radius: 50px;
+    background-color: transparent;
+    color: black;
+}
+
+.email::placeholder {
+    text-align: center;
+}
+
+.message {
+    margin-bottom: 10px;
+    height: 150px;
+    width: 60%;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: transparent;
+    color: black;
+}
+
+.message::placeholder {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.button {
+    background-color: #124e66;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 150px;
+
+}
+
+.button:hover {
+    color: black;
+    background-color: #00badc;
+}
+
+.messageSent {
+    color: gold;
+    font-size: 4.2em;
+}
+
+/* allows the text to begin later in the text boxes */
+.textInput {
+input[type="text"], textarea {
+    padding-left: 10px;
+}
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 75px;
+    box-shadow: 0 0 10px rgba(0, 0, 0)
+}
+
+.linkedIn {
+    height: 20px;
+    width: 20px;
+    padding: 1px;
+    margin: 1px;
+    border-radius: 5px;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    animation: fadeInOut 2s ease-in-out;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: orange;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) { 
+    .contactForm {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .name {
+        width: 50%;
+    }
+    
+    .email {
+        width: 60%;
+    }
+    
+    .message {
+        width: 80%;
+    }
+}
