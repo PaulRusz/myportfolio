@@ -1,0 +1,28 @@
+.sliderContainer2 {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.sliderImage2 {
+    max-height: 300px;
+    max-width: 300px;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .sliderContainer2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .sliderImage2 {
+        max-height: 300px;
+        max-width: 300px;
+    }
+}
