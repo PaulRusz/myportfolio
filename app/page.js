@@ -16,9 +16,9 @@ export default function Home() {
           />
           <link rel="icon" href="/favicon.ico" />
 
-          <main className="flex min-h-screen flex-col items-center justify-center py-2">
+          <div className="flex min-h-screen flex-col items-center justify-center py-2">
             <ImageSlider />
-          </main>
+          </div>
         </div>
 
         <div className={styles.homepageTextContainer}>
@@ -40,9 +40,9 @@ export default function Home() {
           />
           <link rel="icon" href="/favicon.ico" />
 
-          <main className="flex min-h-screen flex-col items-center justify-center py-2">
+          <div className="flex min-h-screen flex-col items-center justify-center py-2">
             <ImageSlider2 />
-          </main>
+          </div>
         </div>
       </div>
     </Layout>

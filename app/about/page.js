@@ -1,9 +1,8 @@
 "use client";
 
 import styles from "./about.module.scss";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
 import Image from "next/image";
 
 export default function About() {
@@ -13,7 +12,7 @@ export default function About() {
     const images = ["/Monaco.png", "/wedding.png"];
     const randomIndex = Math.floor(Math.random() * images.length);
     setCurrentImage(images[randomIndex]);
-  }, []); // Added an empty dependency array to run the effect only once
+  }, []); // Ensure this only runs once after the component mounts
 
   return (
     // Code for 'fade in' transition
@@ -26,6 +25,7 @@ export default function About() {
       <div className={styles.aboutMeContainer}>
         <h1 className={styles.h1}>A Bit About Me: </h1>
 
+        {/* Render the Image component only after the client has mounted */}
         {currentImage && (
           <Image
             src={currentImage}
