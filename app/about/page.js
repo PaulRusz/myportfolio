@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./about.module.css";
+import styles from "./about.module.scss";
 import React from "react";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import styles from "./Navbar.module.css";
+import styles from "./Navbar.module.scss";
 import Link from "next/link";
 import { useState } from "react";
 

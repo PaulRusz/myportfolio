@@ -8,7 +8,7 @@ import { StaticImageData } from "next/image";
 import image1 from "../../public/SA.png";
 import image2 from "../../public/SA2.png";
 
-import styles from './imageslider1.module.css'
+import styles from './imageslider1.module.scss'
 
 // image data
 interface ImageData {

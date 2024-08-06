@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./Contact.module.scss";
+import styles from "./contact.module.scss";
 import React from "react";
 import { motion } from "framer-motion";
 import { useState, useRef } from "react";

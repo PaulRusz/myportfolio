@@ -1,4 +1,4 @@
-import "./styles/global.css";
+import "./styles/global.scss";
 import Navbar from "./components/Navbar/navbar.js";
 import Footer from "./components/Footer/footer.js";
 // import Layout from "./Layout.js";

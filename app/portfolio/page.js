@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./Portfolio.module.scss";
+import styles from "./portfolio.module.scss";
 import React from "react";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";

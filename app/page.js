@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./components/homepage.module.css";
+import styles from "./components/homepage.module.scss";
 import ImageSlider from "./components/ImageSlider/imageslider1";
 import ImageSlider2 from "./components/ImageSlider/imageslider2";
 import Layout from "./layout.js";

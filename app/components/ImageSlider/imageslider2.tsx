@@ -8,7 +8,7 @@ import image1 from "../../public/SA.png";
 import image2 from "../../public/SA2.png";
 // import image3 from "@/public/image3.jpg";
 
-import styles from "./imageslider2.module.css";
+import styles from "./imageslider2.module.scss";
 
 // image data
 interface ImageData {
