@@ -1,6 +1,9 @@
-import styles from "./resume.module.scss";
+"use client";
+
+import styles from "./Resume.module.scss";
 import React from "react";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function Resume() {
   return (

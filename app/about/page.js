@@ -4,6 +4,7 @@ import styles from "./about.module.scss";
 import React from "react";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function About() {
   const [currentImage, setCurrentImage] = useState(null);
@@ -12,7 +13,7 @@ export default function About() {
     const images = ["/Monaco.png", "/wedding.png"];
     const randomIndex = Math.floor(Math.random() * images.length);
     setCurrentImage(images[randomIndex]);
-  });
+  }, []); // Added an empty dependency array to run the effect only once
 
   return (
     // Code for 'fade in' transition
@@ -26,7 +27,13 @@ export default function About() {
         <h1 className={styles.h1}>A Bit About Me: </h1>
 
         {currentImage && (
-          <img src={currentImage} alt="Random Image" className={styles.image} />
+          <Image
+            src={currentImage}
+            alt="Random Image"
+            className={styles.image}
+            width={500} // Set the width of the image
+            height={300} // Set the height of the image
+          />
         )}
 
         <div className={styles.divider}></div>
